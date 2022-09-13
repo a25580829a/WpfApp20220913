@@ -24,5 +24,13 @@ namespace WpfApp20220913
         {
             InitializeComponent();
         }
+
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxButton button = MessageBoxButton.OKCancel;
+            string num = textBox.Text;
+            MessageBox.Show($"所輸入數值為:{num}", "message title", button);
+        }
     }
 }

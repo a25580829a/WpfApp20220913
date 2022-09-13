@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp20220913"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid Background="#FF89B5D0">
-        <Label Content="請輸入一個數值N:" Margin="135,183,497,218" FontSize="18"/>
+        Title="MainWindow" Height="554" Width="1058">
+    <Grid Background="#FF89B5D0" Margin="1,1,10,-5">
+        <Label x:Name="label" Content="請輸入一個數值N:" Margin="36,184,596,182" FontSize="20"/>
+        <TextBox x:Name="textBox" TextWrapping="Wrap" Text="TextBox" Margin="289,184,395,206"/>
+        <Button x:Name="button" Content="確定" Margin="648,180,49,202" Click="button_Click"/>
     </Grid>
 </Window>
