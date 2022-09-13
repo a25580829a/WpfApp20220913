@@ -22,9 +22,14 @@ namespace WpfApp20220913
     {
         public MainWindow()
         {
+            InitializeComponent();
+        }
+
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
             MessageBoxButton button = MessageBoxButton.OKCancel;
-            string num = TextBox.Text;
-            MessageBox.Show($"所輸入的數值為:{num}","message title ",button);
+            MessageBox.Show("Hello world!!", "message title", button);
         }
     }
 }
