@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:WpfApp20220913"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="#FF89B5D0">
-        <Label Content="請輸入一個數值N:" Margin="135,183,497,218" FontSize="18"/>
+    <Grid Background="#FF89B5D0" Margin="1,1,-1,0">
+        <Label x:Name="label" Content="請輸入一個數值N:" Margin="136,173,496,228" FontSize="18"/>
+        <TextBox x:Name="textBox" TextWrapping="Wrap" Text="TextBox" Margin="330,173,354,217"/>
+        <Button x:Name="button" Content="確定" Margin="488,177,209,204"/>
     </Grid>
 </Window>
